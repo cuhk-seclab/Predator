@@ -1,0 +1,6 @@
+[submodule "base/phuzzer"]
+	path = base/phuzzer
+	url = git@github.com:1treeforest/phuzzer.git
+[submodule "base/Widash"]
+	path = base/Widash
+	url = git@github.com:1TreeForest/Widash.git

@@ -1,0 +1,17 @@
+/app/main_script.php:3:ZEND_INCLUDE_OR_EVAL
+/app/helper_script.php:12:ZEND_RETURN
+/app/main_script.php:6:ZEND_JMP
+/app/main_script.php:7:ZEND_DO_FCALL
+/app/helper_script.php:8:ZEND_DO_FCALL
+/app/helper_script.php:6:ZEND_RETURN
+/app/helper_script.php:8:ZEND_RETURN
+/app/main_script.php:9:ZEND_DO_FCALL
+/app/helper_script.php:15:ZEND_RETURN
+/app/main_script.php:22:ZEND_JMP
+/app/main_script.php:27:ZEND_JMP
+/app/main_script.php:38:ZEND_JMP
+/app/main_script.php:48:ZEND_JMP
+/app/main_script.php:54:ZEND_INCLUDE_OR_EVAL
+/app/main_script.php(54) : eval()'d code:1:ZEND_RETURN
+/app/main_script.php:55:ZEND_JMPZ_EX
+/app/main_script.php:56:ZEND_DO_FCALL

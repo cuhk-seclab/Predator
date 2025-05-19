@@ -1,0 +1,45 @@
+{
+  "testname": "unittests",
+  "afl_inst_interpreter_binary": "/usr/local/bin/php-cgi",
+  "wc_inst_interpreter_binary": "/usr/local/bin/php-cgi",
+  "base_url": "http://localhost/",
+  "afl_path": "/afl",
+  "ld_library_path":"/wclibs",
+  "afl_preload":"/wclibs/lib_db_fault_escalator.so",
+  "number_of_trials": 1,
+  "number_of_refuzzes": 1,
+  "timeout" : 36000,
+  "script_skip_list": [],
+  "script_random_order": 1,
+  "cores": 5,
+  "first_crash": true,
+  "binary_options":"",
+  "request_crawler": {
+    "form_url" : "http://localhost/config.php",
+    "usernameSelector": "",
+    "usernameValue": "",
+    "passwordSelector": "",
+    "passwordValue": "",
+    "submitType": "",
+    "positiveLoginMessage": "Success",
+    "method": "GET",
+    "form_selector": "",
+    "form_submit_selector": "",
+    "ignoreValues": [],
+    "urlUniqueIfValueUnique": []
+  },
+
+  "direct":{
+    "url": "NO_LOGIN",
+       "postData": "",
+    "getData": "",
+    "positiveHeaders": {},
+    "positiveBody": "Success",
+    "method": "POST",
+    "cgiBinary": "/usr/local/bin/php-cgi",
+    "loginSessionCookie" : "PHPSESSION",
+    "mandatoryGet": "",
+    "extra_authorized_requests": [{"url": ""}]
+  }
+
+}

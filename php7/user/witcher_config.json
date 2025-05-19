@@ -1,0 +1,47 @@
+{
+  "testname": "openemr-user",
+  "afl_inst_interpreter_binary": "/usr/local/bin/php-cgi",
+  "wc_inst_interpreter_binary": "/usr/local/bin/php-cgi",
+  "base_url": "http://172.17.0.3:@@PORT_INCREMENT@@/",
+  "base_url_path": "/openemr/portal",
+  "afl_path": "/afl",
+  "ld_library_path":"/wclibs",
+  "afl_preload":"/wclibs/lib_db_fault_escalator.so",
+  "number_of_trials": 1,
+  "number_of_refuzzes": 1,
+  "timeout" : 1200,
+  "run_timeout": 5000,
+  "server_base_port": 80,
+  "script_skip_list": [],
+  "script_random_order": 0,
+  "cores": 1,
+  "binary_options":"",
+  "request_crawler": {
+    "form_url" : "http://172.17.0.3/openemr/portal",
+    "usernameSelector": "#uname",
+    "usernameValue": "First1",
+    "passwordSelector": "#pass",
+    "passwordValue": "password",
+    "submitType": "enter",
+    "positiveLoginMessage": "Profile",
+    "method": "POST",
+      "form_selector": "#difficultAF",
+    "form_submit_selector": "",
+    "ignoreValues": [],
+    "urlUniqueIfValueUnique": []
+  },
+
+  "direct":{
+    "url": "http://localhost/interface/main/main_screen.php",
+    "postData": "new_login_session_management=1&authProvider=TroubleMaker&authUser=admin&clearPass=password&languageChoice=1",
+    "getData": "auth=login&site=default",
+    "positiveHeaders": [{"Location":"/interface/main/tabs/main.php"}],
+    "positiveBody": "",
+    "method": "POST",
+    "cgiBinary": "/php/php-cgi-mysqli-wc",
+    "loginSessionCookie" : "OpenEMR",
+    "mandatoryGet": "",
+    "extra_authorized_requests": [{"url": "http://localhost/interface/patient_file/summary/demographics.php?set_pid=2"}]
+  }
+
+}

@@ -1,0 +1,21 @@
+{
+  "name": "request_crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bin": {
+    "execute": "main.js"
+  },
+  "dependencies": {
+    "fuzzyset": "^1.0.6",
+    "puppeteer": "^12.0.1",
+    "url-exist": "^3.0.0"
+  }
+}

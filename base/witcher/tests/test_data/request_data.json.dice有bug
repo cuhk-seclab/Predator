@@ -1,0 +1,17 @@
+{
+  "requestsFound": {
+    "GET http://localhost/dicegame.php ": {
+      "_id": 2,
+      "_urlstr": "http://localhost/dicegame.php",
+      "_url": "http://localhost/dicegame.php",
+      "_resourceType": "document",
+      "_method": "GET",
+      "key": "GET http://localhost/dicegame.php"
+    }
+  },
+  "inputSet": [
+    "action=attack",
+    "action=defend",
+    "guesses=1,2"
+  ]
+}

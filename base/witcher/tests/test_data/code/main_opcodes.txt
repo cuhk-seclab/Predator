@@ -1,0 +1,111 @@
+line      #* E I O op                           
+------------------------------------
+    3     0  E >   INCLUDE_OR_EVAL
+    6     1        FETCH_IS
+          2        ISSET_ISEMPTY_DIM_OBJ
+          3      > JMPZ
+          4    >   FETCH_R
+          5        FETCH_DIM_R
+          6        CAST
+          7        QM_ASSIGN
+          8      > JMP
+          9    >   QM_ASSIGN
+         10    >   ASSIGN
+    7    11        INIT_FCALL_BY_NAME
+         12        SEND_VAR_EX
+         13        DO_FCALL
+         14        ASSIGN
+    8    15        ROPE_INIT
+         16        ROPE_ADD
+         17        ROPE_ADD
+         18        ROPE_ADD
+         19        ROPE_END
+         20        ECHO
+    9    21        ROPE_INIT
+         22        ROPE_ADD
+         23        ROPE_END
+         24        INIT_FCALL_BY_NAME
+         25        SEND_VAR_EX
+         26        DO_FCALL
+         27        CONCAT
+         28        CONCAT
+         29        ECHO
+   12    30        IS_SMALLER
+         31      > JMPZ
+   13    32    >   NOP
+         33        FAST_CONCAT
+         34        ECHO
+         35      > JMP
+   14    36    >   IS_SMALLER
+         37      > JMPZ
+   15    38    >   NOP
+         39        FAST_CONCAT
+         40        ECHO
+         41      > JMP
+   17    42    >   NOP
+         43        FAST_CONCAT
+         44        ECHO
+   21    45    >   ECHO
+   22    46        ASSIGN
+         47      > JMP
+   23    48    >   NOP
+         49        FAST_CONCAT
+         50        ECHO
+   22    51        POST_INC
+         52        FREE
+         53    >   IS_SMALLER_OR_EQUAL
+         54      > JMPNZ
+   26    55    >   ASSIGN
+   27    56      > JMP
+   28    57    >   ROPE_INIT
+         58        ROPE_ADD
+         59        ROPE_END
+         60        ECHO
+   29    61        POST_DEC
+         62        FREE
+   27    63    >   IS_SMALLER
+         64      > JMPNZ
+   33    65    >   IS_EQUAL
+         66      > JMPNZ
+   36    67    >   IS_EQUAL
+         68      > JMPNZ
+   39    69    >   IS_EQUAL
+         70      > JMPNZ
+         71    > > JMP
+   34    72    >   ECHO
+   35    73      > JMP
+   37    74    >   ECHO
+   38    75      > JMP
+   40    76    >   ECHO
+   41    77      > JMP
+   43    78    >   ECHO
+   44    79      > JMP
+   48    80    >   DIV
+         81        ASSIGN
+         82      > JMP
+   49    83  E > > CATCH
+   50    84    >   INIT_METHOD_CALL
+         85        DO_FCALL
+         86        CONCAT
+         87        CONCAT
+         88        ECHO
+   51    89      > THROW
+   52    90    > > FAST_CALL
+         91    > > JMP
+   53    92    >   ECHO
+   54    93        INCLUDE_OR_EVAL
+   55    94        IS_EQUAL
+         95      > JMPZ_EX
+         96    >   INIT_FCALL
+         97        SEND_VAL
+         98        SEND_VAL
+         99        DO_ICALL
+        100        IS_EQUAL
+        101        BOOL
+        102    > > JMPZ
+   56   103    >   INIT_FCALL
+        104        SEND_VAL
+        105        DO_ICALL
+   58   106    > > EXIT
+        107*       FAST_RET
+   63   108    > > RETURN

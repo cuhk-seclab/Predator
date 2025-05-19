@@ -1,0 +1,16 @@
+{
+    "requestsFound": {
+    "POST http://localhost/main_script.php ": {
+        "_id": 5,
+        "_urlstr": "http://localhost/main_script.php?vul1=6",
+        "_url": "http://localhost/main_script.php?vul1=6",
+        "_resourceType": "document",
+        "_method": "POST",
+        "_postData": "number=1&",
+        "key": "POST http://localhost/main_script.php"
+      }
+    },
+    "inputSet": [
+        "number=1"
+    ]
+  }

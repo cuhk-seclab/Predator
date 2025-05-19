@@ -1,0 +1,24 @@
+{
+    "requestsFound": {
+    "POST http://localhost/test-5-cmd.php ": {
+        "_id": 5,
+        "_urlstr": "http://localhost/test-5-cmd.php?vul1=6",
+        "_url": "http://localhost/test-5-cmd.php?vul1=6",
+        "_resourceType": "document",
+        "_method": "POST",
+        "_postData": "nv6=6&",
+        "key": "POST http://localhost/test-5-cmd.php "
+      }
+    },
+    "inputSet": [
+        "nv1=1",
+        "junk4=nv-val4",
+        "junk5=nv-val5",
+        "nv2=nv-val",
+        "nv3=nv-val",
+        "nv6=nv-val",
+        "nv7=nv-val",
+        "nv8=nv-val",
+        "vul2=nv-val"
+    ]
+  }
